@@ -1,0 +1,155 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+}
+
+body {
+    margin: auto;
+    color:<bold> #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: white;
+    padding-top: 20px;
+    line-height: 2.5;
+}
+
+
+#container {
+    width: 900px;
+    padding:20px;
+    margin: auto;
+    line-height:1.25;
+    text-align:left;
+    background-color: #2D2926;
+    padding:10px;
+    border-radius:16px;
+    margin-top:10px;
+    height: 800px;
+}
+
+#title {
+    font-size:36px;
+    text-align:center;
+    line-height:1.25;
+    padding:10px 0 15px;
+    margin-bottom:15px;
+    border-bottom:1px solid #4D4946;
+}
+
+#t1 {
+    float:left;
+}
+
+#Request {
+    float:right;
+}
+
+#Requestdiv {
+    margin-top: 22px;
+}
+
+#t1 tr {
+    height:35px;
+}
+
+#t1 tr td:first-child {
+    text-align: right;
+}
+
+table {
+    width:420px;
+}
+
+#btninstruct p{
+    margin-bottom: 0;
+}
+
+input {
+    border-radius: 16px;
+    border-width: 0px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+textarea {
+    border-radius: 16px;
+    border-width: 0px;
+    margin: 10px 20px 0 0;
+    padding: 10px;
+    resize: none;
+}
+
+input:focus {
+    outline:none; 
+}
+
+textarea:focus {
+    outline:none;
+}
+
+button {
+    height: 25px;
+    border: none;
+    background-color: #E94B3C;
+    border-radius:24px;
+}
+
+button:focus {
+    outline:none;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: #FEB607;
+}
+
+#btn1 {
+    margin-left:8px;
+    width: 90px;
+}
+
+#btn2 {
+    float:right;
+    margin-right:20px;
+    width:130px;
+}
+
+#Commentdiv {
+    margin:0 0 0 20px;
+}
+
+.CommentNote {
+    color: #8D8986;
+}
+
+select {
+    height:35px;
+    width:261px;
+    line-height:30px;
+    border: 3px solid blue;
+    border-radius:5px;
+} 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  /*safari and chrome*/
+    select {
+        height:35px;
+        width:261px;
+        line-height:30px;
+        border: 3px solid blue;
+        border-radius:5px;
+    } 
+}
+select::-moz-focus-inner { /*Remove button padding in FF*/ 
+    border: 3px solid blue;
+    border-radius:5px;
+    padding: 0;
+}
+@media screen\0 { /* IE Hacks: targets IE 8, 9 and 10 */        
+    select {
+        height:35px;
+        width:261px;
+        line-height:25px;
+        border: 3px solid blue;
+        border-radius:5px;
+    }     
+}

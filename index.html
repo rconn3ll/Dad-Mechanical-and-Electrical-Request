@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web Sheet</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+    <div id="container">
+
+        <div id="title">
+            <strong>&#8226; MECHANICAL & ELECTRICAL REQUEST &#8226;</strong>
+        </div>
+        
+        <table id="t1">    
+            <tr><td>Claim Number:</td><td><input type="text" name="field1" tabindex=1 style="width: 150px;" onInput="field6Function()"><button id="btn1" onClick="clearFields()">Clear Form</button></td></tr>
+  
+           <tr><td>Request by:</td><td><input type="text" name="field2" tabindex=2 style="width: 250px;" onInput="field6Function()"></td></tr>
+ 
+           <tr><td>Vehicle:</td><td><input type="text" name="field3" tabindex=3 style="width: 250px;" onInput="field6Function()"></td> 
+                </tr>
+ 
+           <tr><td>Question:</td><td><input type="text" name="field4" tabindex=4 style="width: 250px;" onInput="field6Function()"></td></tr>
+        </table>
+        
+        <div id="Requestdiv">
+             Request Note:<button id="btn2" onClick="clipboard()">Copy to clipboard</button>
+        <textarea name="field6" tabindex=6 rows="42" cols="60" id="Request"></textarea>
+        </div>
+
+        <div id="Commentdiv">
+            <span class="CommentNote" style="margin-left: 110px;">Note: Please be specific. Load </span> 
+            
+            Comments: 
+            
+            <span class="CommentNote" style="margin-left: 18px;">a picture into Teams if available.</span>
+        
+        <textarea name="field5" tabindex=5 rows="31" cols="48" id="Comment"  onInput="field6Function()"></textarea>
+            
+        </div>
+        
+    </div>
+        
+<!-- *Bellow is the Javascript* -->
+        <script>
+            
+            function clearFields(){
+                var elements = document.getElementsByTagName("input");
+                for (var ii=0; ii < elements.length; ii++) {
+                    if (elements[ii].type == "text" || elements[ii].type == "date") {
+                        elements[ii].value = "";
+                    } 
+                }
+                
+                var elements = document.getElementsByTagName("textarea");
+                for (var ii=0; ii < elements.length; ii++) {
+                    elements[ii].value = "";
+                    
+                }
+            }
+            
+            function field6Function(){
+                var f1 = document.getElementsByName("field1")[0];
+                var f2 = document.getElementsByName("field2")[0];
+                var f3 = document.getElementsByName("field3")[0];
+                var f4 = document.getElementsByName("field4")[0];
+                var f5 = document.getElementsByName("field5")[0];
+                var f6 = document.getElementsByName("field6")[0];
+                f6.value = f1.value + " " + f2.value + " " + f3.value + " " + f4.value + " " + f5.value;
+            }
+            
+            function clipboard() {
+                  /* Get the text field */
+                  var copyText = document.getElementsByName("field6")[0];
+
+                  /* Select the text field */
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+                  /* Copy the text inside the text field */
+                  document.execCommand("copy");
+            }
+            
+        </script>
+    </body>
+</html>
