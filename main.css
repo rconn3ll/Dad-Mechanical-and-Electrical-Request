@@ -24,7 +24,7 @@ body {
     padding:10px;
     border-radius:16px;
     margin-top:10px;
-    height: 800px;
+    height: 790px;
 }
 
 #title {
@@ -36,16 +36,14 @@ body {
     border-bottom:1px solid #4D4946;
 }
 
-#t1 {
+.FloatDivLeft {
     float:left;
+    width:425px;
 }
 
-#Request {
-    float:right;
-}
-
-#Requestdiv {
-    margin-top: 22px;
+.FloatDivRight {
+    float:left;
+    width:475px;
 }
 
 #t1 tr {
@@ -79,6 +77,16 @@ textarea {
     resize: none;
 }
 
+#Comment {
+    width: 353px;
+    height: 465px;
+}
+
+#Request {
+    width: 437px;
+    height: 630px;
+}
+
 input:focus {
     outline:none; 
 }
@@ -110,8 +118,8 @@ button:hover{
 
 #btn2 {
     float:right;
-    margin-right:20px;
     width:130px;
+    margin-right:20px;
 }
 
 #Commentdiv {

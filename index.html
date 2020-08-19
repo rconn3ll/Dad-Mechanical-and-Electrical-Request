@@ -14,33 +14,36 @@
             <strong>&#8226; MECHANICAL & ELECTRICAL REQUEST &#8226;</strong>
         </div>
         
-        <table id="t1">    
-            <tr><td>Claim Number:</td><td><input type="text" name="field1" tabindex=1 style="width: 150px;" onInput="field6Function()"><button id="btn1" onClick="clearFields()">Clear Form</button></td></tr>
-  
-           <tr><td>Request by:</td><td><input type="text" name="field2" tabindex=2 style="width: 250px;" onInput="field6Function()"></td></tr>
- 
-           <tr><td>Vehicle:</td><td><input type="text" name="field3" tabindex=3 style="width: 250px;" onInput="field6Function()"></td> 
-                </tr>
- 
-           <tr><td>Question:</td><td><input type="text" name="field4" tabindex=4 style="width: 250px;" onInput="field6Function()"></td></tr>
-        </table>
-        
-        <div id="Requestdiv">
-             Request Note:<button id="btn2" onClick="clipboard()">Copy to clipboard</button>
-        <textarea name="field6" tabindex=6 rows="42" cols="60" id="Request"></textarea>
-        </div>
+        <div class="FloatDivLeft">
+            <table id="t1">    
+                <tr><td>Claim Number:</td><td><input type="text" name="field1" tabindex=1 style="width: 150px;" onInput="field6Function()"><button id="btn1" onClick="clearFields()">Clear Form</button></td></tr>
 
-        <div id="Commentdiv">
-            <span class="CommentNote" style="margin-left: 110px;">Note: Please be specific. Load </span> 
-            
-            Comments: 
-            
-            <span class="CommentNote" style="margin-left: 18px;">a picture into Teams if available.</span>
-        
-        <textarea name="field5" tabindex=5 rows="31" cols="48" id="Comment"  onInput="field6Function()"></textarea>
-            
+               <tr><td>Request by:</td><td><input type="text" name="field2" tabindex=2 style="width: 250px;" onInput="field6Function()"></td></tr>
+
+               <tr><td>Vehicle:</td><td><input type="text" name="field3" tabindex=3 style="width: 250px;" onInput="field6Function()"></td> 
+                    </tr>
+
+               <tr><td>Question:</td><td><input type="text" name="field4" tabindex=4 style="width: 250px;" onInput="field6Function()"></td></tr>
+            </table>
+
+            <div id="Commentdiv">
+                <span class="CommentNote" style="margin-left: 110px;">Note: Please be specific. Load </span> 
+
+                Comments: 
+
+                <span class="CommentNote" style="margin-left: 18px;">a picture into Teams if available.</span>
+
+            <textarea name="field5" tabindex=5 rows="31" cols="48" id="Comment"  onInput="field6Function()"></textarea>
+
+            </div>
         </div>
         
+        <div class="FloatDivRight">
+            <div id="Requestdiv">
+                 Request Note:<button id="btn2" onClick="clipboard()">Copy to clipboard</button>
+            <textarea name="field6" tabindex=6 rows="42" cols="60" id="Request"></textarea>
+            </div>
+        </div>
     </div>
         
 <!-- *Bellow is the Javascript* -->
