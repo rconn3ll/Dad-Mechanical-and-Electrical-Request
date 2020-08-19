@@ -5,7 +5,139 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Web Sheet</title>
-        <link rel="stylesheet" href="main.css">
+        <style>
+            html {
+                -webkit-font-smoothing: antialiased;
+                background: #fff;
+            }
+
+            body {
+                margin: auto;
+                color:<bold> #000;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 17px;
+                color: white;
+                padding-top: 20px;
+                line-height: 2.5;
+            }
+
+
+            #container {
+                width: 900px;
+                padding:20px;
+                margin: auto;
+                line-height:1.25;
+                text-align:left;
+                background-color: #2D2926;
+                padding:10px;
+                border-radius:16px;
+                margin-top:10px;
+                height: 790px;
+            }
+
+            #title {
+                font-size:36px;
+                text-align:center;
+                line-height:1.25;
+                padding:10px 0 15px;
+                margin-bottom:15px;
+                border-bottom:1px solid #4D4946;
+            }
+
+            .FloatDivLeft {
+                float:left;
+                width:425px;
+            }
+
+            .FloatDivRight {
+                float:left;
+                width:475px;
+            }
+
+            #t1 tr {
+                height:35px;
+            }
+
+            #t1 tr td:first-child {
+                text-align: right;
+            }
+
+            table {
+                width:420px;
+            }
+
+            #btninstruct p{
+                margin-bottom: 0;
+            }
+
+            input {
+                border-radius: 16px;
+                border-width: 0px;
+                height: 25px;
+                padding: 0 10px;
+            }
+
+            textarea {
+                border-radius: 16px;
+                border-width: 0px;
+                margin: 10px 20px 0 0;
+                padding: 10px;
+                resize: none;
+            }
+
+            #Comment {
+                width: 353px;
+                height: 465px;
+            }
+
+            #Request {
+                width: 437px;
+                height: 630px;
+            }
+
+            input:focus {
+                outline:none; 
+            }
+
+            textarea:focus {
+                outline:none;
+            }
+
+            button {
+                height: 25px;
+                border: none;
+                background-color: #E94B3C;
+                border-radius:24px;
+            }
+
+            button:focus {
+                outline:none;
+            }
+
+            button:hover{
+                cursor:pointer;
+                background-color: #FEB607;
+            }
+
+            #btn1 {
+                margin-left:8px;
+                width: 90px;
+            }
+
+            #btn2 {
+                float:right;
+                width:130px;
+                margin-right:20px;
+            }
+
+            #Commentdiv {
+                margin:0 0 0 20px;
+            }
+
+            .CommentNote {
+                color: #8D8986;
+            }
+        </style>
     </head>
     <body>
     <div id="container">
